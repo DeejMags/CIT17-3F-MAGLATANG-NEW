@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+include 'db.php';
 
 if (isset($_GET['id']) && isset($_GET['status'])) {
     $id = $_GET['id'];

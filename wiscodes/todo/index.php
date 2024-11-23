@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+include 'db.php';
 
 $stmt = $conn->query("SELECT * FROM tasks ORDER BY created_at DESC");
 $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
